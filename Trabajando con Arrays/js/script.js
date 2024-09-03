@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
   const filteredArray = strangeArray
     .filter((item) => typeof item === "string")
-    .sort();
+    .sort((a, b) => a.localeCompare(b));
 
   // Muestra la lista de strings filtrados y ordenados
   showList(filteredArray);
